@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Todo List | لیست کارها</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="app">
+    <header class="app__header">
+      <h1> لیست کارهای من</h1>
+      <p id="counter">۰ کار باقی مانده</p>
+    </header>
+
+    <form id="todo-form" class="todo-form">
+      <input
+        type="text"
+        id="todo-input"
+        placeholder="یک کار جدید اضافه کن..."
+        autocomplete="off"
+      />
+      <button type="submit" class="btn btn--add">اضافه کردن</button>
+    </form>
+
+    <ul id="todo-list" class="todo-list"></ul>
+
+    <div class="filters">
+      <button data-filter="all" class="filter-btn active">همه</button>
+      <button data-filter="active" class="filter-btn">در انتظار</button>
+      <button data-filter="done" class="filter-btn">انجام شده</button>
+    </div>
+
+    <footer class="app__footer">
+      <button id="clear-done" class="btn btn--clear">پاک کردن انجام‌شده‌ها</button>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
